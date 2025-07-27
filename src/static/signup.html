@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventra - Sign Up</title>
+    <meta name="description" content="Ventra - Register for a new account as a buyer or seller.">
+    <meta name="keywords" content="Ventra, sign up, register, new account, buyer, seller">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html" class="logo-section">
+            <h1 class="logo">Ventra</h1>
+            <p class="tagline">"Linking Dreams to Deliveries."</p>
+        </a>
+        <div class="header-icons">
+            <a href="checkout.html" class="icon-link" id="cart-icon-link">
+                <span class="material-icons">shopping_cart</span>
+                <span class="cart-count" id="cart-item-count">0</span>
+            </a>
+            <a href="delivery.html" class="icon-link">
+                <span class="material-icons">delivery_dining</span>
+            </a>
+            <a href="signin.html" class="icon-link" id="person-icon-link">
+                <span class="material-icons">person</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="auth-section">
+            <h2 class="section-title">Create Your Ventra Account</h2>
+            <form id="signup-form" class="auth-form">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" name="email" placeholder="your@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" placeholder="********" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <input type="password" id="signup-confirm-password" name="confirmPassword" placeholder="********" required>
+                </div>
+                <div class="form-group">
+                    <label>Account Type:</label>
+                    <div class="role-selector">
+                        <label>
+                            <input type="radio" name="role" value="buyer" checked>
+                            <span>I am a Buyer</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="role" value="seller">
+                            <span>I am a Seller</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="auth-submit-button">Sign Up</button>
+                <a href="signin.html" class="auth-switch-link">Already have an account? Sign In</a>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ventra</h3>
+                <p>Linking Dreams to Deliveries.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#"><iconify-icon icon="mdi:facebook"></iconify-icon> Facebook</a></li>
+                    <li><a href="#"><iconify-icon icon="mdi:instagram"></iconify-icon> Instagram</a></li>
+                    <li><a href="#"><iconify-icon icon="mdi:twitter"></iconify-icon> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 Ventra. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
